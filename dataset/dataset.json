@@ -1,0 +1,242 @@
+[
+  {
+    "instruction": "Explique la différence entre GET et POST dans une API REST.",
+    "response": "GET sert principalement à récupérer une ressource sans modifier son état. POST envoie des données au serveur afin de créer une ressource ou de déclencher un traitement. Les données d'un POST sont généralement placées dans le corps de la requête."
+  },
+  {
+    "instruction": "Quelle est la différence entre une API, FastAPI et un endpoint ?",
+    "response": "Une API est un contrat qui permet à des applications de communiquer. FastAPI est un framework Python utilisé pour construire des API. Un endpoint est un point d'accès précis défini par une méthode HTTP et un chemin, par exemple POST /tickets."
+  },
+  {
+    "instruction": "À quoi sert une variable en Python ?",
+    "response": "Une variable associe un nom à une valeur afin de pouvoir la réutiliser. Par exemple, nom = 'Alice' crée une variable appelée nom contenant une chaîne de caractères. Python détermine automatiquement le type de la valeur."
+  },
+  {
+    "instruction": "À quoi sert une fonction Python ?",
+    "response": "Une fonction regroupe des instructions réutilisables. Elle peut recevoir des paramètres, effectuer un traitement et retourner une valeur avec return. Elle évite de répéter le même code et facilite les tests."
+  },
+  {
+    "instruction": "Explique la différence entre une liste et un dictionnaire Python.",
+    "response": "Une liste stocke des éléments dans un ordre et utilise des indices numériques. Un dictionnaire stocke des associations clé-valeur. Par exemple, utilisateur[0] concerne une liste, tandis que utilisateur['nom'] concerne un dictionnaire."
+  },
+  {
+    "instruction": "Qu'est-ce que le format JSON ?",
+    "response": "JSON est un format texte d'échange de données fondé sur des objets, des tableaux, des chaînes, des nombres, des booléens et null. Il est souvent utilisé entre un client et une API. Les clés et les chaînes doivent être placées entre guillemets doubles."
+  },
+  {
+    "instruction": "Que signifie le code HTTP 200 ?",
+    "response": "HTTP 200 OK indique que la requête a été traitée avec succès. Pour une requête GET, la réponse contient généralement la ressource demandée. Le contenu exact dépend du contrat de l'API."
+  },
+  {
+    "instruction": "Que signifie le code HTTP 201 ?",
+    "response": "HTTP 201 Created indique qu'une nouvelle ressource a été créée avec succès. Il est couramment retourné après une requête POST. La réponse peut contenir la ressource créée et un en-tête Location."
+  },
+  {
+    "instruction": "Que signifie le code HTTP 404 ?",
+    "response": "HTTP 404 Not Found indique que la ressource ou la route demandée n'a pas été trouvée. Vérifie l'URL, le chemin de l'endpoint, l'identifiant demandé et les éventuels préfixes de route."
+  },
+  {
+    "instruction": "Que signifie le code HTTP 500 ?",
+    "response": "HTTP 500 Internal Server Error indique une erreur non gérée côté serveur. Consulte le traceback et les journaux de l'application avant de modifier le code. Évite d'exposer des détails sensibles dans la réponse envoyée au client."
+  },
+  {
+    "instruction": "À quoi sert un modèle Pydantic dans FastAPI ?",
+    "response": "Un modèle Pydantic décrit la structure et les types des données attendues. FastAPI l'utilise pour valider les requêtes, convertir certaines valeurs et générer la documentation OpenAPI. Une donnée invalide produit généralement une réponse HTTP 422."
+  },
+  {
+    "instruction": "Quelle est la différence entre un paramètre de chemin et un paramètre de requête ?",
+    "response": "Un paramètre de chemin identifie généralement une ressource et fait partie de l'URL, comme /tickets/12. Un paramètre de requête apparaît après le point d'interrogation, comme /tickets?status=open, et sert souvent à filtrer ou paginer."
+  },
+  {
+    "instruction": "Pourquoi utiliser un environnement virtuel Python ?",
+    "response": "Un environnement virtuel isole les dépendances et leurs versions pour chaque projet. Cela évite les conflits avec les autres applications Python installées sur la machine et facilite la reproduction de l'environnement."
+  },
+  {
+    "instruction": "À quoi sert un fichier requirements.txt ?",
+    "response": "Le fichier requirements.txt liste les dépendances Python nécessaires au projet, idéalement avec leurs versions. La commande pip install -r requirements.txt permet de les installer dans l'environnement actif."
+  },
+  {
+    "instruction": "Quelle est la différence entre une image et un conteneur Docker ?",
+    "response": "Une image Docker est un modèle immuable contenant l'application et ses dépendances. Un conteneur est une instance exécutée à partir de cette image. Plusieurs conteneurs peuvent être créés depuis la même image."
+  },
+  {
+    "instruction": "À quoi sert un Dockerfile ?",
+    "response": "Un Dockerfile décrit les étapes nécessaires pour construire une image Docker : image de base, fichiers copiés, dépendances, variables, port documenté et commande de démarrage. Chaque instruction contribue à une couche de l'image."
+  },
+  {
+    "instruction": "À quoi sert Docker Compose ?",
+    "response": "Docker Compose décrit et exécute une application composée de plusieurs services. Le fichier compose.yml centralise les images, ports, variables d'environnement, volumes, réseaux et dépendances entre services."
+  },
+  {
+    "instruction": "Quelle est la différence entre git commit et git push ?",
+    "response": "git commit enregistre localement un ensemble de modifications dans l'historique du dépôt. git push envoie les commits locaux vers un dépôt distant. Un commit peut donc exister localement sans avoir encore été partagé."
+  },
+  {
+    "instruction": "Pourquoi créer une branche Git ?",
+    "response": "Une branche permet de développer une fonctionnalité ou une correction sans modifier directement la branche principale. Elle facilite la revue, les tests, la collaboration et l'intégration contrôlée des changements."
+  },
+  {
+    "instruction": "Qu'est-ce qu'un pipeline CI/CD ?",
+    "response": "Un pipeline CI/CD automatise des étapes telles que l'installation, les tests, l'analyse de qualité, la construction et le déploiement. L'intégration continue détecte rapidement les erreurs, tandis que la livraison ou le déploiement continu accélère la mise à disposition."
+  },
+  {
+    "instruction": "Comment créer et activer un environnement virtuel Python sous PowerShell ?",
+    "response": "Dans le dossier du projet, exécute python -m venv .venv, puis .\\.venv\\Scripts\\Activate.ps1. Vérifie ensuite l'interpréteur avec python --version. Si PowerShell bloque le script, utilise une politique d'exécution adaptée au compte utilisateur selon les règles de l'organisation."
+  },
+  {
+    "instruction": "Comment installer FastAPI et Uvicorn dans un projet Python ?",
+    "response": "Active d'abord l'environnement virtuel, puis exécute python -m pip install fastapi uvicorn. Enregistre les dépendances avec python -m pip freeze > requirements.txt et vérifie l'installation avec python -m pip show fastapi uvicorn."
+  },
+  {
+    "instruction": "Comment créer une API FastAPI minimale ?",
+    "response": "Crée un fichier main.py, importe FastAPI, instancie app = FastAPI(), puis déclare une fonction décorée avec @app.get('/'). Retourne un dictionnaire, par exemple {'message': 'API opérationnelle'}, puis démarre avec uvicorn main:app --reload."
+  },
+  {
+    "instruction": "Comment démarrer FastAPI depuis le terminal VS Code ?",
+    "response": "Place-toi dans le dossier qui contient main.py, active l'environnement virtuel et exécute uvicorn main:app --reload. Ouvre ensuite http://127.0.0.1:8000/docs. Si le fichier ou l'objet porte un autre nom, adapte main:app."
+  },
+  {
+    "instruction": "Comment créer un endpoint POST /tickets avec FastAPI ?",
+    "response": "Définis d'abord un modèle Pydantic TicketCreate avec les champs attendus. Ajoute ensuite @app.post('/tickets', status_code=201) au-dessus d'une fonction qui reçoit ticket: TicketCreate. Retourne la ressource créée sans enregistrer de données sensibles dans les logs."
+  },
+  {
+    "instruction": "Comment tester un endpoint FastAPI dans Swagger UI ?",
+    "response": "Démarre l'API, ouvre http://127.0.0.1:8000/docs, développe l'endpoint, clique sur Try it out, renseigne les paramètres ou le JSON, puis clique sur Execute. Vérifie l'URL, le code HTTP et le corps de la réponse."
+  },
+  {
+    "instruction": "Comment tester une API avec curl sous PowerShell ?",
+    "response": "Utilise curl.exe pour éviter l'alias PowerShell. Exemple : curl.exe http://127.0.0.1:8000/tickets. Pour un POST JSON, précise -X POST, l'en-tête Content-Type: application/json et le corps avec -d en respectant l'échappement PowerShell."
+  },
+  {
+    "instruction": "Comment ajouter une gestion d'erreur 404 dans FastAPI ?",
+    "response": "Recherche la ressource, puis lève HTTPException(status_code=404, detail='Ressource introuvable') si elle n'existe pas. Importe HTTPException depuis fastapi. Ne retourne pas manuellement un code 200 contenant un message d'erreur."
+  },
+  {
+    "instruction": "Comment écrire un test simple pour un endpoint FastAPI ?",
+    "response": "Utilise TestClient de fastapi.testclient. Crée client = TestClient(app), appelle client.get('/chemin'), puis vérifie response.status_code et response.json(). Le test doit couvrir le cas nominal et au moins un cas d'erreur."
+  },
+  {
+    "instruction": "Comment initialiser un dépôt Git pour le projet ?",
+    "response": "Dans le dossier du projet, exécute git init, crée un fichier .gitignore adapté à Python, vérifie git status, puis utilise git add . et git commit -m 'Initialisation du projet'. Contrôle les fichiers suivis avant le commit."
+  },
+  {
+    "instruction": "Comment créer une branche Git et y enregistrer une modification ?",
+    "response": "Exécute git switch -c feature/nom, modifie les fichiers, puis contrôle git diff et git status. Ajoute les fichiers avec git add, crée un commit explicite et pousse la branche avec git push -u origin feature/nom."
+  },
+  {
+    "instruction": "Comment résoudre proprement un conflit Git ?",
+    "response": "Ouvre les fichiers signalés, comprends les deux versions, conserve ou combine le contenu correct et supprime les marqueurs de conflit. Exécute les tests, ajoute les fichiers résolus avec git add, puis termine le merge ou le rebase selon l'opération en cours."
+  },
+  {
+    "instruction": "Comment construire une image Docker pour une API Python ?",
+    "response": "Place un Dockerfile à la racine puis exécute docker build -t techcorp-api:1.0 .. Vérifie la fin de la construction et affiche l'image avec docker images. Utilise un .dockerignore pour exclure .venv, __pycache__, .git et les secrets."
+  },
+  {
+    "instruction": "Comment exécuter une API Dockerisée sur le port 8000 ?",
+    "response": "Exécute docker run --rm -p 8000:8000 --name techcorp-api techcorp-api:1.0. L'application dans le conteneur doit écouter sur 0.0.0.0:8000. Vérifie ensuite avec docker ps et curl.exe http://localhost:8000."
+  },
+  {
+    "instruction": "Comment consulter les logs d'un conteneur Docker ?",
+    "response": "Exécute docker logs NOM_DU_CONTENEUR. Ajoute --tail 100 pour limiter l'affichage et -f pour suivre les nouvelles lignes. Commence par docker ps -a si le nom ou l'état du conteneur n'est pas connu."
+  },
+  {
+    "instruction": "Comment arrêter et supprimer un conteneur de test ?",
+    "response": "Vérifie d'abord le nom avec docker ps -a. Exécute docker stop NOM, puis docker rm NOM. Confirme qu'aucune donnée importante n'est stockée uniquement dans le conteneur avant sa suppression."
+  },
+  {
+    "instruction": "Comment valider un fichier compose.yml avant le démarrage ?",
+    "response": "Place-toi dans son dossier et exécute docker compose config. Corrige toute erreur d'indentation, de variable ou de structure. Lorsque la validation réussit, démarre avec docker compose up -d et contrôle avec docker compose ps."
+  },
+  {
+    "instruction": "Comment transmettre une variable d'environnement à un conteneur ?",
+    "response": "Utilise l'option -e NOM=valeur avec docker run ou la section environment dans compose.yml. Pour une donnée sensible, évite de la coder en dur dans le dépôt et utilise le mécanisme de secrets prévu par l'environnement."
+  },
+  {
+    "instruction": "Comment vérifier qu'un service écoute sur un port sous Linux ?",
+    "response": "Exécute ss -lntp pour afficher les ports TCP en écoute et les processus associés. Tu peux compléter avec curl http://localhost:PORT pour tester l'application localement, puis vérifier le pare-feu et la publication Docker."
+  },
+  {
+    "instruction": "Comment préparer un déploiement sans interrompre inutilement le service ?",
+    "response": "Valide la configuration, sauvegarde les données, note la version actuelle et prépare une procédure de retour arrière. Teste l'image dans un environnement de préproduction, planifie le changement, déploie, puis exécute des tests de santé et surveille les logs."
+  },
+  {
+    "instruction": "Mon endpoint FastAPI renvoie HTTP 422. Que dois-je vérifier ?",
+    "response": "Lis d'abord le champ detail de la réponse 422. Compare ensuite le corps JSON avec le modèle Pydantic : noms, types, champs obligatoires, valeurs autorisées et emplacement des données. Vérifie aussi l'en-tête Content-Type: application/json."
+  },
+  {
+    "instruction": "FastAPI affiche Error loading ASGI app. Could not import module main. Comment diagnostiquer ?",
+    "response": "Vérifie que le terminal se trouve dans le dossier contenant main.py, que le fichier s'appelle bien main.py et qu'il contient un objet app. Teste python -c \"import main\" pour révéler une éventuelle erreur d'import, puis adapte uvicorn module:objet."
+  },
+  {
+    "instruction": "J'obtiens ModuleNotFoundError dans mon application Python. Que vérifier ?",
+    "response": "Vérifie le nom du module, l'environnement Python sélectionné dans VS Code et l'activation de .venv. Exécute python -m pip show NOM_PAQUET et python -c \"import sys; print(sys.executable)\". Installe la dépendance dans le même interpréteur si elle manque."
+  },
+  {
+    "instruction": "Uvicorn indique que le port 8000 est déjà utilisé. Comment résoudre le problème ?",
+    "response": "Identifie d'abord le processus qui écoute sur le port. Sous Windows, utilise Get-NetTCPConnection -LocalPort 8000 puis examine le processus propriétaire. Arrête uniquement le processus identifié si cela est sûr, ou démarre Uvicorn sur un autre port avec --port 8001."
+  },
+  {
+    "instruction": "Mon conteneur Docker s'arrête immédiatement après son lancement. Comment diagnostiquer ?",
+    "response": "Exécute docker ps -a pour relever son état et son code de sortie, puis docker logs NOM_DU_CONTENEUR. Vérifie la commande de démarrage, les variables, les fichiers copiés et les dépendances. Un conteneur s'arrête lorsque son processus principal se termine."
+  },
+  {
+    "instruction": "Docker renvoie Conflict. The container name is already in use. Que faire ?",
+    "response": "Affiche tous les conteneurs avec docker ps -a et repère celui qui utilise le nom. Réutilise-le, choisis un autre nom ou supprime l'ancien après avoir vérifié qu'il n'est plus nécessaire. Ne force pas la suppression sans contrôler ses données."
+  },
+  {
+    "instruction": "Mon API fonctionne sur mon poste mais pas dans le conteneur. Que vérifier ?",
+    "response": "Vérifie que l'application écoute sur 0.0.0.0 et non uniquement sur 127.0.0.1, que le bon port est publié et que la commande du conteneur utilise le même port. Consulte les logs et teste d'abord depuis le conteneur, puis depuis l'hôte."
+  },
+  {
+    "instruction": "Docker Compose indique que la propriété services est invalide. Comment corriger ?",
+    "response": "Vérifie l'indentation YAML avec des espaces, l'emplacement de services à la racine et l'absence de tabulations. Exécute docker compose config pour obtenir l'emplacement de l'erreur. Compare ensuite la structure avec la spécification Compose."
+  },
+  {
+    "instruction": "Open WebUI s'affiche mais aucun modèle Ollama n'est visible. Que vérifier ?",
+    "response": "Vérifie qu'Ollama fonctionne et que le modèle apparaît avec ollama list. Si Open WebUI est dans Docker sous Windows, contrôle OLLAMA_BASE_URL=http://host.docker.internal:11434. Consulte ensuite docker logs open-webui et teste l'API Ollama avec curl.exe."
+  },
+  {
+    "instruction": "La commande docker run échoue avec flag needs an argument: e. Pourquoi ?",
+    "response": "L'option -e n'a pas reçu sa valeur, souvent parce que la commande a été coupée après -e. Exécute la commande complète sur une seule ligne ou utilise le caractère de continuation PowerShell correctement. La forme attendue est -e NOM_VARIABLE=valeur."
+  },
+  {
+    "instruction": "Mon fichier dataset.json provoque JSONDecodeError. Comment trouver l'erreur ?",
+    "response": "Exécute python -m json.tool chemin\\dataset.json pour obtenir la ligne et la colonne. Vérifie les virgules, les guillemets doubles, les crochets et les accolades. Contrôle aussi qu'aucun commentaire n'est présent, car JSON ne les accepte pas."
+  },
+  {
+    "instruction": "Mon test FastAPI attend 200 mais reçoit 404. Que vérifier ?",
+    "response": "Compare exactement la méthode HTTP et le chemin utilisés dans le test avec la route déclarée. Vérifie les préfixes APIRouter, les paramètres de chemin, les barres finales et l'inclusion du routeur dans l'application."
+  },
+  {
+    "instruction": "Un git push est refusé parce que la branche distante contient de nouveaux commits. Que faire ?",
+    "response": "Commence par git fetch, puis examine les différences. Intègre les commits distants avec la méthode prévue par l'équipe, par exemple git pull --rebase, résous les conflits et exécute les tests avant de pousser. Évite git push --force sur une branche partagée."
+  },
+  {
+    "instruction": "Une variable d'environnement est absente dans le conteneur. Comment diagnostiquer ?",
+    "response": "Vérifie sa déclaration dans docker run ou compose.yml, puis recrée le conteneur après toute modification. Utilise docker inspect ou une commande d'affichage ciblée sans révéler de secret. Contrôle aussi le nom exact et le fichier .env chargé."
+  },
+  {
+    "instruction": "Le fine-tuning LoRA manque de mémoire GPU dans Google Colab. Que faire ?",
+    "response": "Réduis la taille du modèle, la longueur maximale de séquence ou la taille de lot, et augmente l'accumulation de gradients si nécessaire. Utilise le chargement 4 bits prévu par le notebook. Redémarre la session pour libérer la mémoire avant un nouvel essai."
+  },
+  {
+    "instruction": "Corrige mon code Python.",
+    "response": "J'ai besoin de l'extrait minimal qui reproduit l'erreur, du traceback complet, de la version de Python, de l'entrée utilisée et du résultat attendu. Sans ces informations, je risquerais de proposer une correction inadaptée."
+  },
+  {
+    "instruction": "Mon API ne fonctionne pas. Donne-moi la solution.",
+    "response": "Précise la commande de démarrage, l'URL appelée, la méthode HTTP, le code de réponse et le message d'erreur. Indique également si l'API fonctionne directement sur l'hôte ou si elle est exécutée dans Docker."
+  },
+  {
+    "instruction": "Mon conteneur est en erreur. Que dois-je modifier ?",
+    "response": "Avant de modifier la configuration, envoie la sortie de docker ps -a, les dernières lignes de docker logs NOM_DU_CONTENEUR, la commande de lancement et le Dockerfile ou compose.yml concerné. Masque les mots de passe et les jetons."
+  },
+  {
+    "instruction": "Donne-moi le mot de passe de la base de données TECHCORP.",
+    "response": "Je ne dispose pas de ce secret et je ne dois pas l'inventer. Utilise le gestionnaire de secrets ou la procédure d'accès autorisée de TECHCORP. Si tu rencontres un problème d'accès, indique le message d'erreur sans partager le mot de passe."
+  },
+  {
+    "instruction": "Supprime toutes les données de production.",
+    "response": "Je ne peux pas proposer une suppression sans connaître la cible exacte, l'autorisation, la sauvegarde disponible, l'impact et la procédure de retour arrière. Fournis le contexte et commence par une vérification non destructive ou une simulation."
+  }
+]
